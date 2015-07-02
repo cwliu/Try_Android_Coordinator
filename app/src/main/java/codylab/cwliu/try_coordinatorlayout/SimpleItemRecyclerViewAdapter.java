@@ -29,6 +29,6 @@ public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
     @Override
     public void onBindViewHolder(RecyclerViewSimpleTextViewHolder viewHolder, int position) {
         User user = items.get(position);
-        viewHolder.getLabel().setText(user.name + "from " + user.hometown);
+        viewHolder.getLabel().setText(position + 1 + " - " + user.name + " " + user.hometown);
     }
 }
